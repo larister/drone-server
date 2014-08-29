@@ -1,0 +1,21 @@
+<h1>Upload your robot</h1>
+
+<form action="/uploadFiles" enctype="multipart/form-data" method="post">
+    <div>
+        <label for="robot-name">Robot Name</label>
+        <input id="robot-name" type="text" name="Robot Name" placeholder="Warpig" required>
+    </div>
+    <div>
+        <label for="brain">Brain</label>
+        <input id="brain" type="file" name="brain" required>
+    </div>
+    <div>
+        <label for="body">Tank Body</label>
+        <input id="body" type="file" name="body">
+    </div>
+    <div>
+        <label for="turret">Tank Turret</label>
+        <input id="turret" type="file" name="turret">
+    </div>
+    <input type="submit" value="Upload">
+</form>
